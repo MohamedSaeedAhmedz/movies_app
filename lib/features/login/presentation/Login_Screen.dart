@@ -106,7 +106,7 @@ class _LoginViewState extends State<LoginView> {
                     onPressed: () {
                       Navigator.of(
                         context,
-                      ).pushNamed(AppRoutes.forgetPasswordScreen);
+                      ).pushNamed(AppRoutes.register);
                     },
                     child: Text(
                       loc.forgetPassword,

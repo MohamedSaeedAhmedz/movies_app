@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+
 // import 'package:movie_app/features/forget_password_screen/forget_password_screen.dart';
 // import 'package:movie_app/utils/app_theme.dart';
 // import 'package:movie_app/features/update_profile/presentation/update_profile_screen.dart';
 import 'package:movies_app/features/login/presentation/Login_Screen.dart';
 import 'package:movies_app/features/onboarding/presentation/onboarding_Screen.dart';
+import 'package:movies_app/features/register_screen/presentation/register_view.dart';
 import 'core/bloc/locale/locale_bloc.dart';
 import 'core/localization/app_localizations.dart';
 import 'core/routes/AppRoutes.dart';
@@ -43,13 +45,13 @@ class MyApp extends StatelessWidget {
                 child: child!,
               );
             },
-            initialRoute: AppRoutes.login,
+            initialRoute: AppRoutes.register,
             routes: {
               AppRoutes.onboarding: (context) => const OnboardingView(),
               AppRoutes.login: (context) => const LoginView(),
               // AppRoutes.updateProfile: (context) => const UpdateProfileScreen(),
-              // AppRoutes.forgetPasswordScreen: (context) =>
-              // const ForgetPasswordScreen(),
+              AppRoutes.register: (context) =>
+              const RegisterView(),
             },
           );
         },
