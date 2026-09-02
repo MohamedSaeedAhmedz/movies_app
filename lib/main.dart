@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+// import 'package:movie_app/features/forget_password_screen/forget_password_screen.dart';
+// import 'package:movie_app/utils/app_theme.dart';
+// import 'package:movie_app/features/update_profile/presentation/update_profile_screen.dart';
+import 'package:movies_app/features/login/presentation/Login_Screen.dart';
 import 'package:movies_app/features/onboarding/presentation/onboarding_Screen.dart';
+import 'core/bloc/locale/locale_bloc.dart';
+import 'core/localization/app_localizations.dart';
+import 'core/routes/AppRoutes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,17 +17,43 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        title: 'MoviesApp',
-      theme: ThemeData(
-
+    return BlocProvider(
+      create: (context) => LocaleBloc(),
+      child: BlocBuilder<LocaleBloc, LocaleState>(
+        builder: (context, state) {
+          return MaterialApp(
+            // theme: AppTheme.appTheme,
+            debugShowCheckedModeBanner: false,
+            title: 'Movie App',
+            localizationsDelegates: const [
+              AppLocalizations.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: const [Locale('en'), Locale('ar')],
+            locale: state.locale,
+            builder: (context, child) {
+              return Directionality(
+                textDirection: state.locale.languageCode == 'ar'
+                    ? TextDirection.rtl
+                    : TextDirection.ltr,
+                child: child!,
+              );
+            },
+            initialRoute: AppRoutes.login,
+            routes: {
+              AppRoutes.onboarding: (context) => const OnboardingView(),
+              AppRoutes.login: (context) => const LoginView(),
+              // AppRoutes.updateProfile: (context) => const UpdateProfileScreen(),
+              // AppRoutes.forgetPasswordScreen: (context) =>
+              // const ForgetPasswordScreen(),
+            },
+          );
+        },
       ),
-
-    home: OnboardingView(),
     );
   }
 }

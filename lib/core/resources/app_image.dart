@@ -1,24 +1,24 @@
 class MImages {
   MImages._();
 
-  static const String branding = "assets/images/brand.png";
-  static const String moviesLogo = "assets/images/icon.png";
-  static const String background = "assets/images/bg.png";
-  static const String logo2 = "assets/images/logo2.png";
-  static const String avatar1 = "assets/images/avatar1.png";
-  static const String avatar2 = "assets/images/avatar2.png";
-  static const String avatar3 = "assets/images/avatar3.png";
-  static const String avatar4 = "assets/images/avatar4.png";
-  static const String avatar5 = "assets/images/avatar5.png";
-  static const String avatar6 = "assets/images/avatar6.png";
-  static const String avatar7 = "assets/images/avatar7.png";
-  static const String avatar8 = "assets/images/avatar8.png";
-  static const String avatar9 = "assets/images/avatar9.png";
-  static const String forgot = "assets/images/forgot.png";
-  static const String popcorn = "assets/images/popcorn.png";
-  static const String an = "assets/images/an.png";
-  static const String wn = "assets/images/wn.png";
-  static const String placeholder = "assets/images/placeholder.png";
+  static const String branding = "assets/image/brand.png";
+  static const String moviesLogo = "assets/image/icon.png";
+  static const String background = "assets/image/bg.png";
+  static const String logo2 = "assets/image/logo2.png";
+  static const String avatar1 = "assets/image/avatar1.png";
+  static const String avatar2 = "assets/image/avatar2.png";
+  static const String avatar3 = "assets/image/avatar3.png";
+  static const String avatar4 = "assets/image/avatar4.png";
+  static const String avatar5 = "assets/image/avatar5.png";
+  static const String avatar6 = "assets/image/avatar6.png";
+  static const String avatar7 = "assets/image/avatar7.png";
+  static const String avatar8 = "assets/image/avatar8.png";
+  static const String avatar9 = "assets/image/avatar9.png";
+  static const String forgot = "assets/image/forgot.png";
+  static const String popcorn = "assets/image/popcorn.png";
+  static const String an = "assets/image/an.png";
+  static const String wn = "assets/image/wn.png";
+  static const String placeholder = "assets/image/placeholder.png";
   static const String LogoX3 = "assets/image/LogoX3.png";
 
 }
