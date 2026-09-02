@@ -14,7 +14,7 @@
   "onboardingDesc6": "",
   "email": "Email",
   "password": "Password",
-  "forgetPassword": "Forget Password ?",
+  "forgetPassword": "Forget Password ",
   "login": "Login",
   "register": "Register",
   "dontHaveAccount": "Don’t Have Account ?",
@@ -84,4 +84,5 @@
   "war": "War",
   "western": "Western",
   "noSimilar": "No similar movies"
+  "next": "Next",
 }

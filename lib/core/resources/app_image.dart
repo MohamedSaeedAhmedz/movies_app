@@ -21,4 +21,15 @@ class MImages {
   static const String placeholder = "assets/image/placeholder.png";
   static const String LogoX3 = "assets/image/LogoX3.png";
 
+  static const String onboarding1 = "assets/image/ON1.png";
+
+  static const String onboarding2 = "assets/image/ON2.png";
+
+  static const String onboarding3 = "assets/image/ON3.png";
+
+  static const String onboarding4 = "assets/image/ON4.png";
+
+  static const String onboarding5 = "assets/image/ON5.png";
+
+  static const String onboarding6 = "assets/image/ON6.png";
 }

@@ -14,7 +14,7 @@
   "onboardingDesc6": "",
   "email": "البريد الإلكتروني",
   "password": "كلمة المرور",
-  "forgetPassword": "هل نسيت كلمة المرور؟",
+  "forgetPassword": "هل نسيت كلمة المرور",
   "login": "تسجيل الدخول",
   "register": "تسجيل حساب جديد",
   "dontHaveAccount": "ليس لديك حساب؟",
@@ -84,4 +84,5 @@
   "war": "حرب",
   "western": "ويسترن",
   "noSimilar": "لا توجد أفلام مشابهة"
+  "next": "التالي",
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:movies_app/features/forgetpassword/presentation/forgetpassword_screen.dart';
 
 // import 'package:movie_app/features/forget_password_screen/forget_password_screen.dart';
 // import 'package:movie_app/utils/app_theme.dart';
@@ -45,13 +46,14 @@ class MyApp extends StatelessWidget {
                 child: child!,
               );
             },
-            initialRoute: AppRoutes.register,
+            initialRoute: AppRoutes.onboarding,
             routes: {
               AppRoutes.onboarding: (context) => const OnboardingView(),
-              AppRoutes.login: (context) => const LoginView(),
+              AppRoutes.login: (context) => const LoginScreen(),
               // AppRoutes.updateProfile: (context) => const UpdateProfileScreen(),
               AppRoutes.register: (context) =>
               const RegisterView(),
+              AppRoutes.forgetpassword: (context) => const ForgetPasswordView(),
             },
           );
         },
