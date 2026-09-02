@@ -1,0 +1,14 @@
+{
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "forgetPassword": "نسيت كلمة المرور ؟",
+  "login": "تسجيل الدخول",
+  "dontHaveAccount": "لا تمتلك حساب ؟ ",
+  "createOne": "أنشئ حساباً",
+  "or": "أو",
+  "loginWithGoogle": "التسجيل باستخدام جوجل",
+  "pickAvatar": "اختيار الصورة",
+"deleteAccount": "حذف الحساب",
+"updateData": "تحديث البيانات",
+"resetPassword": "إعادة تعيين كلمة المرور"
+}
