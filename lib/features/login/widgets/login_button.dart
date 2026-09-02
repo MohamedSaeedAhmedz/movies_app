@@ -8,7 +8,7 @@ class LoginButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var loc = AppLocalizations.of(context)!;
+    final loc = AppLocalizations.of(context)!;
 
     return SizedBox(
       width: double.infinity,
@@ -21,9 +21,9 @@ class LoginButton extends StatelessWidget {
           ),
         ),
         onPressed: () {
-          Navigator.of(
-            context,
-          ).pushNamed(AppRoutes.register);
+          Navigator.of(context).pushNamed(
+            AppRoutes.updateProfile,
+          );
         },
         child: Text(
           loc.login,
